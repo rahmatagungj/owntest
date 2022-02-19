@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>OwnTest - JavaScript Testing Framework</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="scribbler-global.css">
+      <link rel="stylesheet" href="scribbler-landing.css">
+      <meta name="description" content="Simple JavaScript Testing Framework with only one file and zero dependencies" />
+      <meta name="author" content="Rahmat Agung Julians" />
+  </head>
+  <body>
+    <nav class="header">
+      <h1 class="logo"><a href="index.html">OwnTest</a></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
+        <li class="menu__item"><a href="https://github.com/rahmatagungj/owntest" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">OwnTest</h1>
+      <p class="hero__description">Simple JavaScript Testing Framework with only one file and zero dependencies</p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <code class="shell-session demo">~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="running">
+        <h3 class="section__title">Running</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="all">all</li>
+            <li class="tab" data-tab="single">single</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active all">$  node owntest.js</code>
+            <code class="tab__pane single">$  node owntest.js --test=example.test.js</code>
+          </pre>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Fast & Light</h3>
+          <p>Start writing test on any folder and run a single file.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Configuration</h3>
+          <p>Nothing to configure just write test and run it.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Highlightings</h3>
+          <p>For better readability, ownTest has a clean, beautiful color scheme allow you read test fast.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">2022 | <a href="https://github.com/rahmatagungj/owntest" target="_blank" class="link link--light">OwnTest</a></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
