@@ -20,16 +20,18 @@ Options:
 ```
 
 ## To Use
-
-1. Create test file with format `name.test.js`
+1. Initialize your ownTest project:
+```bash
+node owntest.js init
+```
+2. Create test file with format `name.test.js`
 
 > You can put file in any folder but recommended on `__test__`.
 
-2. Write test code in test file.
-
-### Run Test
-  1. Run `owntest.js` to run all test.
-  2. Run `owntest.js --test=name.test.js` to run single test.
+3. Write test code in test file.
+4. Run your test file:
+  	- Run `owntest.js` to run all test.
+  	- Run `owntest.js --test=name.test.js` to run single test.
 
 
 ## Expect
