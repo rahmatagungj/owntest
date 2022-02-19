@@ -69,10 +69,12 @@ hr {
 
 .tab {
   display: inline-block;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.8rem;
   font-weight: 200;
   cursor: pointer;
   color: white;
+  position: relative;
+  top: -10px;
 }
 
 .tab.active {
