@@ -26,6 +26,9 @@ expect(1).not().toBe(2);
 - `expect(actual).toBe(expected)`
   Expects that the actual value is equal to the expected value.
 
+- `expect(actual).toEqual(expected)`
+  Expects that the actual value is equal to the expected value.
+  
 - `expect(actual).toBeType(expected)`
   Expects that the actual value is of the same type as the expected value.
 
