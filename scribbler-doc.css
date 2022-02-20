@@ -32,6 +32,11 @@ html, body {
   color: white !important;
 }
 
+li code {
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
 
 /* menu */
 .menu {

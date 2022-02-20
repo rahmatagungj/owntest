@@ -1,25 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OwnTest - JavaScript Testing Framework</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="scribbler-global.css">
-    <link rel="stylesheet" href="scribbler-doc.css">
-    <meta name="description" content="Simple JavaScript Testing Framework with only one file and zero dependencies" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scribbler-global.css" />
+    <link rel="stylesheet" href="scribbler-doc.css" />
+    <meta
+      name="description"
+      content="Simple JavaScript Testing Framework with only one file and zero dependencies"
+    />
     <meta name="author" content="Rahmat Agung Julians" />
   </head>
   <body>
     <div class="doc__bg"></div>
     <nav class="header">
-      <h1 class="logo"><a href="index.html">OwnTest <span class="logo__thin">Doc</span></a></h1>
+      <h1 class="logo">
+        <a href="index.html">OwnTest <span class="logo__thin">Doc</span></a>
+      </h1>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
-        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+        <li class="menu__item">
+          <a href="" class="link link--dark"
+            ><i class="fa fa-github"></i> Github</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="index.html" class="link link--dark"
+            ><i class="fa fa-home"></i> Home</a
+          >
+        </li>
       </ul>
     </nav>
     <div class="wrapper">
@@ -27,12 +46,17 @@
         <ul>
           <li class="js-btn selected">Get Started</li>
           <li class="js-btn">Options</li>
+          <li class="js-btn">Expect</li>
+          <li class="js-btn">Methods</li>
         </ul>
       </aside>
       <article class="doc__content">
         <section class="js-section">
           <h3 class="section__title">Get Started</h3>
-          <p>Learn how to use OwnTest, such as your testing preference and the default folder location.</p>
+          <p>
+            Learn how to use OwnTest, such as your testing preference and the
+            default folder location.
+          </p>
           <h3 class="section__title">Installation</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
@@ -64,12 +88,194 @@
             </tr>
           </table>
         </section>
+        <section class="js-section">
+          <h3 class="section__title">Expect</h3>
+          <p>
+            Expect to give you access to a number of "matches" that will allow
+            you to validate things, including several methods.
+          </p>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Methods</h3>
+          <p>
+            All of the methods below can be used with a negation format like
+            not(), example:
+          </p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+              // normal <br />
+              expect(1).toBe(1); <br />
+              // negation <br />
+              expect(1).not().toBe(2); <br />
+              </code>
+            </pre>
+          </div>
+          <ul>
+            <li><code>expect(actual).toExist()</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is not <code>undefined</code> or
+            <code>null</code>.
+          </p>
+          <ul>
+            <li><code>expect(actual).toBe(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value is equal to the expected value.</p>
+          <ul>
+            <li><code>expect(actual).toEqual(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value is equal to the expected value.</p>
+          <ul>
+            <li><code>expect(actual).toBeType(expected)</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is of the same type as the expected
+            value.
+          </p>
+          <ul>
+            <li><code>expect(actual).toBeTruthy()</code></li>
+          </ul>
+          <p>Expects that the actual value is truthy.</p>
+          <ul>
+            <li><code>expect(actual).toBeFalsy()</code></li>
+          </ul>
+          <p>Expects that the actual value is falsy.</p>
+          <ul>
+            <li><code>expect(actual).toBeGreaterThan(expected)</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is greater than the expected value.
+          </p>
+          <ul>
+            <li><code>expect(actual).toBeLessThan(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value is less than the expected value.</p>
+          <ul>
+            <li><code>expect(actual).toBeCloseTo(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value is close to the expected value.</p>
+          <ul>
+            <li><code>expect(actual).toBeInstanceOf(expected)</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is an instance of the expected value.
+          </p>
+          <ul>
+            <li><code>expect(actual).toBeOneOf(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value is one of the expected values.</p>
+          <ul>
+            <li><code>expect(actual).toBeBetween(expected, expected)</code></li>
+          </ul>
+          <p>Expects that the actual value is between the expected values.</p>
+          <ul>
+            <li><code>expect(actual).toBeLessThanOrEqual(expected)</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is less than or equal to the expected
+            value.
+          </p>
+          <ul>
+            <li>
+              <code>expect(actual).toBeGreaterThanOrEqual(expected)</code>
+            </li>
+          </ul>
+          <p>
+            Expects that the actual value is greater than or equal to the
+            expected value.
+          </p>
+          <ul>
+            <li><code>expect(actual).toThrowError()</code></li>
+          </ul>
+          <p>Expects that the actual value throws an error.</p>
+          <ul>
+            <li><code>expect(actual).toBeNull()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>null</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBeUndefined()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>undefined</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBeNaN()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>NaN</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBeFinite()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>finite</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBePositive()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>positive</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBeNegative()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>negative</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBeZero()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>zero</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBeGreaterThanZero()</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is <code>greater than zero</code>.
+          </p>
+          <ul>
+            <li><code>expect(actual).toBeLessThanZero()</code></li>
+          </ul>
+          <p>Expects that the actual value is <code>less than zero</code>.</p>
+          <ul>
+            <li><code>expect(actual).toBePositiveInfinity()</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is <code>positive infinity</code>.
+          </p>
+          <ul>
+            <li><code>expect(actual).toBeNegativeInfinity()</code></li>
+          </ul>
+          <p>
+            Expects that the actual value is <code>negative infinity</code>.
+          </p>
+          <ul>
+            <li><code>expect(actual).toContain(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value contains the expected value.</p>
+          <ul>
+            <li><code>expect(actual).toThrow(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value throws the expected value.</p>
+          <ul>
+            <li><code>expect(actual).toHaveReturned(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value has returned the expected value.</p>
+          <ul>
+            <li><code>expect(actual).toHaveLength(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value has the expected length.</p>
+          <ul>
+            <li><code>expect(actual).stringMatch(expected)</code></li>
+          </ul>
+          <p>Expects that the actual value matches the expected value.</p>
+        </section>
       </article>
     </div>
 
-    <footer class="footer">2022 | <a href="https://github.com/rahmatagungj/owntest" target="_blank" class="link link--light">OwnTest</a></footer>
+    <footer class="footer">
+      2022 |
+      <a
+        href="https://github.com/rahmatagungj/owntest"
+        target="_blank"
+        class="link link--light"
+        >OwnTest</a
+      >
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <script src="scribbler.js"></script>
   </body>
 </html>
