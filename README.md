@@ -1,7 +1,7 @@
 
 # OwnTest
 
-Simple JavaScript Testing Framework with only one file and zero dependencies.
+Simple JavaScript Testing Framework with only single file and zero configuration.
 
 ```bash
 Usage:
