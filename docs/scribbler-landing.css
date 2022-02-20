@@ -96,6 +96,9 @@
 }
 
 @media (max-width: 750px) {
+  .logo {
+    padding: 0rem 1rem;
+  }
   .hero__terminal {
     width: 70%;
   }
