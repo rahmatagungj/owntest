@@ -31,6 +31,26 @@
   text-align: center;
   background-color: var(--bg-color);
   padding: 2rem 0 10rem 0;
+  position: relative;
+}
+
+.hero::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  background-image: url(/universe_generative_pattern.png);
+  background-size: 100%;
+  mix-blend-mode: screen;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  opacity: 50%;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero__title {
@@ -55,8 +75,10 @@
   border-radius: 4px;
   background-color: #232A2F;
   min-height: 285px;
-  animation: fadeUp 2s;
+  animation: fadeUp 1s;
   box-shadow: 0px 12px 36px 9.2px rgba(42, 64, 66, 0.6);
+  position: relative; 
+  z-index: 5;
 }
 
 .hero__terminal pre {

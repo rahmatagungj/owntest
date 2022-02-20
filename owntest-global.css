@@ -9,7 +9,7 @@
   --light-gray-color: #C6CBD1;
   --medium-gray-color: #959DA5;
   --dark-gray-color: #444D56; 
-  --bg-color: #1e2025;
+  --bg-color: #1B1F24;
   --code-bg-color: #444D56;
 }
 
@@ -114,7 +114,7 @@ hr {
 .button--primary {
   padding: 10px 22px;
   background-color: white;
-  color: #1B1F24;
+  color: #041122;
   position: relative;
   text-decoration: none;
   border: 0;
