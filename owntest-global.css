@@ -113,8 +113,8 @@ hr {
 /* buttons */
 .button--primary {
   padding: 10px 22px;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: white;
+  color: #1B1F24;
   position: relative;
   text-decoration: none;
   border: 0;
@@ -133,8 +133,7 @@ hr {
 }
 
 .button--primary:hover {
-  text-shadow: 0px 1px 1px var(--accent-color-dark);
-  color: white;
+  color: black;
   transform: translate3D(0, -3px, 0);
 }
 
