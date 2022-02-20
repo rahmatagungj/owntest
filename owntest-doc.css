@@ -26,10 +26,12 @@ html, body {
 
 .logo__thin {
   font-weight: 300;
+  margin-left: 10px;
 }
 
 .logo a {
   color: white !important;
+  display: flex;
 }
 
 li code {
