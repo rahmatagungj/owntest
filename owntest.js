@@ -11,27 +11,44 @@ const getAll = function (selector, scope) {
 
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
-  let i = 0;
   const txt = `node owntest.js
-            OwnTest
-            Total Test File: 1
-            
-            RUNNING  __tests__/example.test.js
-            ❖ Example Test
-              ✓ should be able to run a test
-            PASS  Successfully completed test suite Example Test
+
+  OwnTest v0.0.4
+  
+  <span style="background-color:#98C379"><b> PASS </b></span><b> &nbsp; __tests__/dev.test.js</b>
+  ❖ Development Test
+    &nbsp; <font color="#98C379"><b>✔</b></font> should be able to run a test
+  
+  <span style="background-color:#98C379"><b> PASS </b></span><b> &nbsp; __tests__/math.test.js</b>
+  ❖ Sum Math Testing
+    &nbsp; <font color="#98C379"><b>✔</b></font> should return the sum of two numbers
+  ❖ Returned Math Testing
+    &nbsp; <font color="#98C379"><b>✔</b></font> Function isEven should be have returned boolean
+    &nbsp; <font color="#98C379"><b>✔</b></font> Function isEven should be not throwing an error
+    &nbsp; <font color="#98C379"><b>✔</b></font> 2 from isEven Function should be even and boolean
+  ❖ Function Math Testing
+    &nbsp; <font color="#98C379"><b>✔</b></font> Function isEven should be exist to call
+  
+  <span style="background-color:#98C379"><b> PASS </b></span><b> &nbsp; __tests__/owner.test.js</b>
+  ❖ Owner Permission Testing
+    &nbsp; <font color="#98C379"><b>✔</b></font> isOwner should be boolean type
+    &nbsp; <font color="#98C379"><b>✔</b></font> isOwner should be true for accessing system
+    &nbsp; <font color="#98C379"><b>✔</b></font> if not isOwner should be showing: Permission Denied
+  
+  <span style="background-color:#98C379"><b> PASS </b></span><b> &nbsp; __tests__/palindrome.test.js</b>
+  ❖ Palindrome Check
+    &nbsp; <font color="#98C379"><b>✔</b></font> should be called
+    &nbsp; <font color="#98C379"><b>✔</b></font> should be returned boolean type
+    &nbsp; <font color="#98C379"><b>✔</b></font> should be not throwing an error
+    &nbsp; <font color="#98C379"><b>✔</b></font> &quot;aba&quot; should be true palindrome
+    &nbsp; <font color="#98C379"><b>✔</b></font> &quot;ab&quot; should be false palindrome
+    &nbsp; <font color="#98C379"><b>✔</b></font> checking more palindrome word
+  
+  <b>Test Suites : </b> <font color="#E06C75"><b>0 failed</b></font> , 6 total
+  <b>Tests       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </b> <font color="#98C379"><b>15 passed</b></font> , 15 total
+
             `;
-  const speed = 10;
-
-  function typeItOut () {
-    if (i < txt.length) {
-      document.getElementsByClassName('demo')[0].innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeItOut, speed);
-    }
-  }
-
-  setTimeout(typeItOut, 1200);
+  document.getElementsByClassName('demo')[0].innerHTML += txt;
 }
 
 // toggle tabs on codeblock
