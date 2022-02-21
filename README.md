@@ -39,26 +39,22 @@ OwnTest provides function to handle setup and teardown, you can use it in your t
 ### Repeating Setup
 ```js
 beforeEach(() => {
-  someFunction();
-	someVariable = null;
+	/** put your function or variable here */
 });
 
 afterEach(() => {
-  someFunction();
-	someVariable = null;
+	/** put your function or variable here */
 });
 ```
 
 ### One-Time Setup
 ```js
 beforeAll(() => {
-	someFunction();
-	someVariable = null;
+	/** put your function or variable here */
 });
 
 afterAll(() => {
-	someFunction();
-	someVariable = null;
+	/** put your function or variable here */
 });
 ```
 
