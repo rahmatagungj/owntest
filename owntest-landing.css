@@ -116,10 +116,6 @@
   margin: 0.5rem 10px;
 }
 
-.hljs {
-  background-color: #232A2F !important;
-}
-
 @media (max-width: 750px) {
   .hero__terminal {
     width: 70%;

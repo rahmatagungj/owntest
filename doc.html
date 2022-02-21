@@ -15,8 +15,12 @@
     <link rel="stylesheet" href="owntest-global.css" />
     <link rel="stylesheet" href="owntest-doc.css" />
     <meta
-      name="description"
-      content="Simple JavaScript Testing Framework with only one file and zero dependencies"
+    name="description"
+    content="Simple JavaScript Testing Framework with only one file and zero dependencies"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
     />
     <meta name="author" content="Rahmat Agung Julians" />
   </head>
@@ -45,6 +49,7 @@
         <ul>
           <li class="js-btn selected">Get Started</li>
           <li class="js-btn">Options</li>
+          <li class="js-btn">Setup and Teardown</li>
           <li class="js-btn">Expect</li>
           <li class="js-btn">Methods</li>
         </ul>
@@ -86,6 +91,40 @@
               <td>Show current version.</td>
             </tr>
           </table>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Setup and Teardown</h3>
+          <p>
+            OwnTest provides function to handle setup and teardown, you can use it in your test file for setup work that needs to happen before each test and teardown work that needs to happen after each test.
+          </p>
+          <h4 class="section__title">Repeating Setup</h4>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                beforeEach(() => {
+                  /** put your function or variable here */
+                });
+                
+                afterEach(() => {
+                  /** put your function or variable here */
+                });
+              </code>
+            </pre>
+          </div>
+          <h4 class="section__title">One-Time Setup</h4>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                beforeAll(() => {
+                  /** put your function or variable here */
+                });
+                
+                afterAll(() => {
+                  /** put your function or variable here */
+                });
+              </code>
+            </pre>
+          </div>
         </section>
         <section class="js-section">
           <h3 class="section__title">Expect</h3>

@@ -34,6 +34,10 @@ html, body {
   display: flex;
 }
 
+.hljs {
+  background-color: transparent !important;
+}
+
 li code {
   font-size: 14px;
   font-weight: 600;
