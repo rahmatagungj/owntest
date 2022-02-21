@@ -33,6 +33,34 @@ node owntest.js init
   	- Run `owntest.js` to run all test.
   	- Run `owntest.js --test=name.test.js` to run single test.
 
+## Setup and Teardown
+OwnTest provides function to handle setup and teardown, you can use it in your test file for setup work that needs to happen before each test and teardown work that needs to happen after each test.
+
+### Repeating Setup
+```js
+beforeEach(() => {
+  someFunction();
+	someVariable = null;
+});
+
+afterEach(() => {
+  someFunction();
+	someVariable = null;
+});
+```
+
+### One-Time Setup
+```js
+beforeAll(() => {
+	someFunction();
+	someVariable = null;
+});
+
+afterAll(() => {
+	someFunction();
+	someVariable = null;
+});
+```
 
 ## Expect
 
