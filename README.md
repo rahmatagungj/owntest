@@ -91,6 +91,10 @@ Expects that the actual value is equal to the expected value.
 
 Expects that the actual value is equal to the expected value.
 
+- `expect(actual).toStrictEqual(expected)`
+
+Expects that the actual value is strictly equal to the expected value.
+
 - `expect(actual).toBeType(expected)`
 
 Expects that the actual value is of the same type as the expected value.
