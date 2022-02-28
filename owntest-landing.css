@@ -140,4 +140,8 @@
     flex-wrap: wrap;
     display: flex;
   }
+
+  .callout .button--primary, .callout .button--secondary {
+    width: 60%;
+  }
 }
