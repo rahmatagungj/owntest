@@ -294,12 +294,17 @@ table td:first-child {
     display: block;
     padding: 0 0 0.5rem 0;
   }
+
+  .wrapper {
+    margin: 0 auto;
+    width: 90% !important;
+  }
 }
 
 /* layout */
 .wrapper {
   margin: 0 auto;
-  width: 70%;
+  width: 65%;
 }
 
 .footer {
