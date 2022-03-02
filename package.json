@@ -3,6 +3,8 @@
   "version": "0.0.5",
   "description": "Simple JavaScript Testing Framework with only single file and zero configuration.",
   "main": "owntest.js",
+  "bin": "./owntest.js",
+  "homepage": "https://rahmatagungj.github.io/owntest",
   "keywords": [
     "testing",
     "framework",
@@ -14,7 +16,8 @@
     "url": "git+https://github.com/rahmatagungj/owntest.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry":"https://npm.pkg.github.com",
+    "access": "public"
   },
   "author": "Rahmat Agung Julians",
   "license": "ISC"
