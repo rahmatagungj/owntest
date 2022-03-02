@@ -32,6 +32,7 @@
   background-color: var(--bg-color);
   padding: 2rem 0 10rem 0;
   position: relative;
+  z-index: 1;
 }
 
 .hero::after {
@@ -90,6 +91,7 @@
 .feature {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .feature__item {
