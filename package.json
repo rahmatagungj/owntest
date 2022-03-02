@@ -1,0 +1,14 @@
+{
+  "name": "@rahmatagungj/owntest",
+  "version": "0.0.5",
+  "description": "Simple JavaScript Testing Framework with only single file and zero configuration.",
+  "main": "owntest.js",
+  "keywords": [
+    "testing",
+    "framework",
+    "simple",
+    "javascript"
+  ],
+  "author": "Rahmat Agung Julians",
+  "license": "ISC"
+}
