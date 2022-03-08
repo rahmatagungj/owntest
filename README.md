@@ -33,6 +33,9 @@ node owntest.js init
   	- Run `owntest.js` to run all test.
   	- Run `owntest.js --test=name.test.js` to run single test.
 
+## Example Usage
+You can see all example in `example` folder or see [Owntest Example](https://github.com/rahmatagungj/owntest/tree/master/example).
+
 ## Configuration
 You can configure your ownTest by following steps:
 1. create `owntest.config.json` file in your project root folder.
