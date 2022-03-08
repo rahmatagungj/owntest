@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-: '
-Copyright (c) 2022, Rahmat Agung Julians
-'
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-node "$DIR"/node_modules/@rahmatagungj/owntest/owntest.js "$@"
