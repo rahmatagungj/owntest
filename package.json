@@ -1,7 +1,7 @@
 {
   "name": "@rahmatagungj/owntest",
-  "version": "0.0.9",
-  "description": "Simple JavaScript Testing Framework with only single file and zero configuration.",
+  "version": "1.0.0-beta",
+  "description": "Simple JavaScript Testing Framework with only single file, zero dependencies and zero configuration.",
   "main": "owntest.js",
   "bin": "owntest",
   "homepage": "https://rahmatagungj.github.io/owntest",
