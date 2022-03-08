@@ -3,7 +3,7 @@
   "version": "0.0.8",
   "description": "Simple JavaScript Testing Framework with only single file and zero configuration.",
   "main": "owntest.js",
-  "bin": "./owntest.js",
+  "bin": "./owntest",
   "homepage": "https://rahmatagungj.github.io/owntest",
   "keywords": [
     "testing",
