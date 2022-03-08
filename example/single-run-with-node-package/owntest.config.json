@@ -1,0 +1,6 @@
+{
+  "testPath": "**",
+  "testIgnore": [],
+  "mode": "production",
+  "autoUpdate": false
+}

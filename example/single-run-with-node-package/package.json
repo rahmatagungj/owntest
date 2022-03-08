@@ -1,0 +1,15 @@
+{
+  "name": "single-run-with-node-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "owntest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rahmatagungj/owntest": "^0.0.9"
+  }
+}
