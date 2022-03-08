@@ -13,7 +13,7 @@ const getAll = function (selector, scope) {
 if (document.getElementsByClassName('demo').length > 0) {
   const txt = `node owntest.js
 
-  OwnTest v0.0.9
+  OwnTest v1.0.0
   
   <span style="background-color:#98C379"><b> PASS </b></span><b> &nbsp; __tests__/dev.test.js</b>
   ❖ Development Test
@@ -44,8 +44,8 @@ if (document.getElementsByClassName('demo').length > 0) {
     &nbsp; <font color="#98C379"><b>✔</b></font> &quot;ab&quot; should be false palindrome
     &nbsp; <font color="#98C379"><b>✔</b></font> checking more palindrome word
   
-  <b>Test Suites : </b> <font color="#E06C75"><b>0 failed</b></font> , 6 total
-  <b>Tests       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </b> <font color="#98C379"><b>15 passed</b></font> , 15 total
+  <b>Test Suites : </b> <font color="#98C379"><b>6 passed</b></font>, <font color="#E06C75"><b>0 failed</b></font> , 6 total
+  <b>Tests       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </b> <font color="#98C379"><b>15 passed</b></font>, <font color="#E06C75"><b>0 failed</b></font>, 15 total
 
             `;
   document.getElementsByClassName('demo')[0].innerHTML += txt;
