@@ -33,6 +33,17 @@ node owntest.js init
   	- Run `owntest.js` to run all test.
   	- Run `owntest.js --test=name.test.js` to run single test.
 
+## Configuration
+You can configure your ownTest by following steps:
+1. create `owntest.config.json` file in your project root folder.
+2. edit `owntest.config.json` file as following:
+	- `"testPath": "__test__"` - path to test folder.
+	- `"testIgnore": ["node_modules"]` - list of folder to ignore.
+	- `"mode": "production"` - mode of your ownTest.
+	- `"autoUpdate": true | false` - auto update your ownTest.
+3. run `owntest.js` to run all test.
+
+
 ## Setup and Teardown
 OwnTest provides function to handle setup and teardown, you can use it in your test file for setup work that needs to happen before each test and teardown work that needs to happen after each test.
 
@@ -155,6 +166,10 @@ Expects that the actual value is `undefined`.
 
 Expects that the actual value is `NaN`.
 
+- `expect(actual).toBeDefined()`
+
+Expects that the actual value is defined.
+
 - `expect(actual).toBeFinite()`
 
 Expects that the actual value is `finite`.
@@ -198,6 +213,14 @@ Expects that the actual value throws the expected value.
 - `expect(actual).toHaveReturned(expected)`
 
 Expects that the actual value has returned the expected value.
+
+- `expect(actual).toHaveReturnedWith(expected)`
+
+Expects that the actual value has returned the expected value.
+
+- `expect(actual).toHaveLastReturnedWith(expected)`
+
+Expects that the actual value has last returned the expected value.
 
 - `expect(actual).toHaveLength(expected)`
 
