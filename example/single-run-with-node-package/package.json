@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@rahmatagungj/owntest": "^1.1.0"
+    "@rahmatagungj/owntest": "^1.2.0"
   }
 }
