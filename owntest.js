@@ -13,7 +13,7 @@ const getAll = function (selector, scope) {
 if (document.getElementsByClassName('demo').length > 0) {
   const txt = `node owntest.js
 
-  OwnTest v1.1.0
+  OwnTest v1.2.0
   
   <span style="background-color:#98C379"><b> PASS </b></span><b> &nbsp; __tests__/dev.test.js</b>
   ❖ Development Test
